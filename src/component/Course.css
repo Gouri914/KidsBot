@@ -1,0 +1,148 @@
+.tab {
+    float: left;
+    border: 1px solid #110202;
+    background: linear-gradient(to bottom, rgba(0, 106, 176, 0.774), rgb(139, 214, 213));
+    width: 20%;
+    height: 100vh;
+  }
+
+  .tab button {
+    display: block;
+    background-color: inherit;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    
+  }
+  .tab button:hover {
+    background: linear-gradient(to bottom, rgba(0, 106, 176, 0.5), rgb(96, 180, 193));
+  }
+  .tab button.active {
+    background: linear-gradient(to bottom, rgba(0, 106, 176, 0.5), rgb(96, 180, 193));
+  }
+  .tabcontent {
+    float: right;
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+    height: 100vh;
+  }  
+
+  .tab .tablinks{
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+  .tab .choose{
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    display: block;
+    background-color: inherit;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #standard3 .content{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  #standard3 .card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgb(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+  }
+
+  #standard3 .card:hover{
+    transform: translateY(20px);
+  }
+
+  #standard3 .card::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 111, 176, 0.5), rgb(61, 185, 201));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+  }
+
+  #standard3 .card:hover::before{
+    opacity: 1;
+  }
+
+  #standard3 .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+  }
+
+  #standard3 .card-body{
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+  }
+  #standard3 .card:hover .card-body{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  #standard3 .card-body h1{
+    margin: 0;
+  }
+
+  #standard3 .card-body p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  #standard3 .card-body .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border: none;
+    border-radius: 0px;
+  }
+
+  #standard3 .card-body .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  

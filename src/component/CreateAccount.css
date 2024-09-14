@@ -1,0 +1,74 @@
+
+.create-account{
+    font-family: Arial, Helvetica, sans-serif;  
+    background-image: url(./image/createbk.png);
+    height: 100vh;
+    width: 100%;
+    opacity: .8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.create-account form {
+   
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%; 
+    padding: 1em;
+    background-color: rgb(245,245,245);
+    border-radius: 10px;
+    color: black;
+    opacity: .9;
+    box-shadow: 0px -1px 9px 0px
+}
+
+.create-account input[type=text], 
+.create-account input[type=password],
+.create-account input[type=email]{
+    width: 100%;
+    padding: 12px 20px; 
+    margin: 10px 0px; 
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #92493a;
+    background: transparent;
+    box-sizing: border-box;
+    transition: all .4s;
+    color: black;
+    outline: none;
+  }
+
+  .form-group{
+    position: relative;
+    width: 100%;
+  }
+
+  .ab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    top: 12px;
+    right: 0;
+    padding-right: 10px;
+  }
+
+  .create-account button{
+    background-color: rgb(12, 237, 192);
+    color: black;
+    padding: 12px 5px;
+    margin: 10px 0px;
+    border:none;
+    cursor:pointer;
+    width:40%;
+    border-radius: 5px;
+  }
+  
+  .button
+  {
+    display: flex;
+    justify-content: space-between;
+  }

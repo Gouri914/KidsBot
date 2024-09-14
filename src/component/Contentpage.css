@@ -1,0 +1,115 @@
+.contentpage .tab {
+    float: left;
+    border: 1px solid #110202;
+    background: linear-gradient(to bottom, rgba(0, 106, 176, 0.774), rgb(139, 214, 213));
+    width: 20%;
+    position: fixed;
+  }
+
+  .contentpage .tab button {
+    display: block;
+    background-color: inherit;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    
+  }
+  .contentpage .tab button:hover {
+    background: linear-gradient(to bottom, rgba(0, 106, 176, 0.5), rgb(96, 180, 193));
+  }
+  .contentpage .tab button.active {
+    background: linear-gradient(to bottom, rgba(0, 106, 176, 0.5), rgb(96, 180, 193));
+  }
+  .contentpage .tabcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }  
+
+  .contentpage .tab .tablinks{
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+
+  .contentpage .tab .choose{
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    display: block;
+    background-color: inherit;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .contentpage .tabcontent .box{
+    border: 2px solid rgba(5, 175, 222, 0.062);
+    padding: 3%;
+    height: 50px;
+    margin: 1%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    border-radius: 1%;
+    position: relative;
+    transition-duration: 4s;
+    border-radius: 10px;
+  }
+
+  .contentpage .tabcontent .box:hover{
+    transform: scale(1.2);
+  }
+
+  .contentpage .tabcontent .box::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s all;
+  }
+
+  .contentpage .tabcontent .box:hover::before{
+   background: linear-gradient(to left, #24ff72, #2196f3);
+   border-radius: 10px;
+   opacity:.8;
+  }
+
+  
+  .box a{
+    transition: color 0.1s; /* Smooth transition for color change */
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(98, 97, 97);
+    text-decoration: none;
+  }
+  
+  .box:hover a {
+    position: absolute;
+    color: white; /* Change the color to white when box is hovered over */
+  }
+  
+  .contentpage .tabcontent .box1{
+    border: 2px solid rgba(5, 175, 222, 0.062);
+    padding-top: 10px;
+    height: 50px;
+    width: 95%;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(to left, #24ff72, #2196f3);
+    opacity: .8;
+    color: azure;
+  }
